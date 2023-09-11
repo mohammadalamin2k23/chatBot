@@ -1,0 +1,154 @@
+body {
+  font-family:'Text Me One', sans-serif;
+  background-color: #f2f2f2;
+}
+body {
+  margin:0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  height:100vh;
+  width:100vw;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#555;
+  background: #ecf0f3;
+  padding-top:175px;
+}
+
+
+.user-input button{
+  font-size:12px;
+  border:none;
+  background: #46bb78;
+  border-radius:3px;
+  color:white;
+  height:30px;
+  width:60px;
+  cursor:pointer;
+  transition:0.2s;
+  position:relative;
+  overflow:hidden;
+  font-family:'Text Me One',sans-serif;
+}
+.user-input button:hover span{
+  transform: translateY(-3px);
+}
+.user-input button:focus{
+  outline:none;
+}
+
+.user-input button span{
+  position:absolute;  
+  right:32px;
+  top:16px;
+  transition:0.3s;
+    transition-delay:0.1s;
+}
+input{border:none;
+outline:none;font-family:'Text Me One',sans-serif;
+text-decoration:none;}
+
+.user-input button.success{
+  pointer-events:none;
+}
+
+.user-input button.loading{
+  width:56px;
+  border-radius:30%;
+  animation: bounce 1s infinite;
+  pointer-events:none;
+  height:30px;
+}
+
+
+
+
+
+@keyframes bounce {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+	
+
+.chat-container {
+padding-top:19px;
+width:430px;
+  height: 700px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+}
+
+.chat-log {
+  max-height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-input {
+  display: flex;
+}
+
+.user-input input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.chat-log p {
+  margin: 0;
+  padding: 5px;
+}
+
+.userInput {
+  background-color: #e6f2ff;
+  border-radius: 5px;
+}
+
+.chatbot-message {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.timestamp {
+  color: #888;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+.user-input button.clear {
+  background-color: #e74c3c;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s linear;
+}
