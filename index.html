@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatBot</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ <link href="https://fonts.googleapis.com/css?family=Orbitron|Text+Me+One" rel="stylesheet">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-log" id="chatLog"></div>
+    <br>
+    <br>
+    
+    <div class="user-input">
+      <input type="text" id="userInput" placeholder="User:">
+      <button class="user-input button" onclick="sendMessage()">Send</button>
+      <button class="user-input button" onclick="viewChatHistory()">History</button><button class="user-input button" onclick="clearChatLog()">Clear</button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
